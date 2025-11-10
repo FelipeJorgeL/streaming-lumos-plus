@@ -47,7 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const barraTopo = document.querySelector('.barra-topo');
-    if (barraTopo && !barraTopo.classList.contains('header-fixo')) {
+    if (barraTopo && window.location.pathname.includes('home.html') || window.location.pathname.includes('detalhes.html')) {
+        
+        if (window.scrollY > 50) {
+            barraTopo.classList.add('header-scroll');
+        } else {
+            barraTopo.classList.remove('header-scroll');
+        }
+
         const handleScroll = () => {
             if (window.scrollY > 50) {
                 barraTopo.classList.add('header-scroll');
@@ -56,5 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
         window.addEventListener('scroll', handleScroll);
+    } else if (barraTopo) {
+        barraTopo.classList.add('header-fixo');
     }
 });

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const perfis = document.querySelectorAll('.card-perfil');
+   const perfis = document.querySelectorAll('.card-perfil');
 
     perfis.forEach(perfil => {
         perfil.addEventListener('click', () => {

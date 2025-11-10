@@ -6,47 +6,43 @@
     <title>Lumos+ | Pesquisa</title>
     
     <link rel="stylesheet" href="css/style.css"> 
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     
-    <header class="navbar">
-        <div class="navbar-left">
-            <a href="home.html" class="logo"><img src="assets/images/Lumos+ logo.png" alt="logo"></a>
+    <header class="barra-topo header-fixo">
+        <div class="logo">
+            <a href="home.html"><img src="assets/images/Lumos+ logo.png" alt="logo"></a>
         </div>
-        <nav class="navbar-center">
-            <a href="home.html#section-em-alta" class="nav-item">Em Alta</a>
-            <a href="filmes.html" class="nav-item">Filmes</a>
-            <a href="series.html" class="nav-item">Séries</a>
+        <nav class="menu-links">
+            <a href="home.html#secao-em-alta" class="link-nav">Em Alta</a>
+            <a href="filmes.html" class="link-nav">Filmes</a>
+            <a href="series.html" class="link-nav">Séries</a>
         </nav>
-        <div class="navbar-right">
-            <form class="search-container" id="search-container">
-                <input type="text" class="search-input" id="search-input" placeholder="Buscar filmes, séries...">
-                <button type="submit" class="search-icon-btn" id="search-icon-btn">
+        <div class="menu-direita">
+            <form class="caixa-busca" id="caixa-busca">
+                <input type="text" class="input-busca" id="input-busca" placeholder="Buscar...">
+                <button type="submit" class="botao-busca" id="botao-busca">
                     <i class="fas fa-search"></i>
                 </button>
             </form>
-            
-            <a href="gerenciar-perfil.html" class="nav-icon profile-icon" id="header-profile-icon">
-                <i class="fas fa-user-circle"></i> </a>
+            <a href="gerenciar-perfil.html" class="icone-nav icone-perfil" id="icone-perfil-header">
+                <i class="fas fa-user-circle"></i> 
+            </a>
         </div>
     </header>
 
-    <main class="content">
-        <div class="search-results-container">
-            <h2 id="search-title">Carregando resultados...</h2>
+    <main>
+        <div class="container-pesquisa">
+            <h2 id="titulo-pesquisa">Carregando resultados...</h2>
             
-            <div class="search-grid" id="search-grid-container">
+            <div class="grid-resultados" id="grid-resultados">
                 </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
+    <footer class="rodape">
+        <div class="rodape-conteudo">
             <small>&copy; 2025 Lumos+. Todos os direitos reservados.</small>
         </div>
     </footer>

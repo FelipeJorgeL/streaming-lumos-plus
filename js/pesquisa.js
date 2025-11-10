@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     const tituloPagina = document.getElementById('titulo-pesquisa');
     const grid = document.getElementById('grid-resultados');
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.innerHTML = '';
 
         if (itens.length === 0) {
-            if (tituloPagina) tituloPagina.textContent = 'Nenhum resultado encontrado.';
+            if (tituloPagina) tituloPagina.textContent = `Nenhum resultado encontrado para "${pegarBuscaDaUrl()}"`;
             return;
         }
 
