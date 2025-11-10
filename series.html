@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos+ | Séries</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="barra-topo">
+        <div class="logo">
+            <a href="home.html"><img src="assets/images/Lumos+ logo.png" alt="logo"></a>
+        </div>
+        <nav class="menu-links">
+            <a href="home.html#secao-em-alta" class="link-nav">Em Alta</a>
+            <a href="filmes.html" class="link-nav">Filmes</a>
+            <a href="series.html" class="link-nav ativo">Séries</a>
+        </nav>
+        <div class="menu-direita">
+            <form class="caixa-busca" id="caixa-busca">
+                <input type="text" class="input-busca" id="input-busca" placeholder="Buscar...">
+                <button type="submit" class="botao-busca" id="botao-busca">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <a href="gerenciar-perfil.html" class="icone-nav icone-perfil" id="icone-perfil-header">
+                <i class="fas fa-user-circle"></i> 
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-categoria">
+            <h1>Séries</h1>
+            <nav class="nav-generos" id="nav-generos">
+                <button class="tag-genero ativo" data-id-genero="all">Populares</button>
+                <button class="tag-genero" data-id-genero="10759">Ação e Aventura</button>
+                <button class="tag-genero" data-id-genero="16">Animação</button>
+                <button class="tag-genero" data-id-genero="35">Comédia</button>
+                <button class="tag-genero" data-id-genero="80">Crime</button>
+                <button class="tag-genero" data-id-genero="99">Documentário</button>
+                <button class="tag-genero" data-id-genero="18">Drama</button>
+                <button class="tag-genero" data-id-genero="10751">Família</button>
+                <button class="tag-genero" data-id-genero="9648">Mistério</button>
+                <button class="tag-genero" data-id-genero="10765">Sci-Fi e Fantasia</button>
+            </nav>
+            <div class="grid-resultados" id="grid-resultados"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <small>&copy; 2025 Lumos+. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script> <script src="js/series.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos+ | Configurações da Conta</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="barra-topo"> 
+        <div class="logo">
+            <a href="home.html"><img src="assets/images/Lumos+ logo.png" alt="logo"></a>
+        </div>
+        <div class="menu-direita">
+            <a href="gerenciar-perfil.html" class="icone-nav icone-perfil" id="icone-perfil-header">
+                <i class="fas fa-user-circle"></i> 
+            </a>
+        </div>
+    </header>
+
+    <main class="container-conta">
+        <h1>Configurações da Conta</h1>
+        
+        <div class="box-perfil-header">
+            <img id="foto-perfil-pagina" src="" alt="Perfil">
+            <h2 id="nome-perfil-pagina">Carregando...</h2>
+        </div>
+        
+        <div class="secao-conta">
+            <h2>Conta</h2>
+            <div class="item-config">
+                <span id="email-perfil-pagina">Email: ...</span>
+                <a href="#">Alterar email</a>
+            </div>
+            <div class="item-config">
+                <span>Senha: ********</span>
+                <a href="#">Alterar senha</a>
+            </div>
+        </div>
+
+        <div class="secao-conta">
+            <h2>Perfis</h2>
+            <div class="item-config">
+                <span>Gerenciar perfis</span>
+                <a href="escolher-perfil.html">Trocar de perfil</a>
+            </div>
+            <div class="item-config">
+                <span>Site sobre mim</span>
+                <a href="#" id="link-sobre-mim" target="_blank">Acessar</a>
+            </div>
+        </div>
+
+        <div class="secao-conta">
+            <h2>Configurações</h2>
+            <div class="item-config">
+                <span>Qualidade de vídeo</span>
+                <a href="#">Automático</a>
+            </div>
+            <div class="item-config">
+                <span>Histórico de visualização</span>
+                <a href="#">Ver</a>
+            </div>
+        </div>
+        
+        <div class="secao-conta">
+            <h2>Ajuda</h2>
+            <a href="#" class="item-config full-width">Central de Ajuda</a>
+            <a href="#" class="item-config full-width">Fale Conosco</a>
+        </div>
+    </main>
+    
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <small>&copy; 2025 Lumos+. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/conta.js"></script> 
+</body>
+</html>

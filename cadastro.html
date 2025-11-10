@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumos+ | Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/cadastro.css">
+    <title>Lumos+ | Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login-cadastro.css">
 </head>
 <body>
-    
-    <div class="cadastro-container">
-        
-        <div class="cadastro">
-            <img src="assets/images/Lumos+ logo.png" alt="Lumos+" class="logo">
-            <p class="subtitle">Digite suas informações para continuar.</p>
+    <div class="container-login-cadastro">
+        <div class="metade-form">
+            <img src="assets/images/Lumos+ logo.png" alt="Lumos+" class="logo-login">
+            <p class="subtitulo-login">Digite suas informações para continuar.</p>
             
-            <form id="cadastro-form">
-                <input type="text" placeholder="Nome completo" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Senha" required>
-                <input type="password" placeholder="Confirmar senha" required>
-                <button type="submit" class="botao-cadastro">Cadastrar-se</button>
+            <form id="form-cadastro" class="form-login-cadastro">
+                <input class="input-form" type="text" placeholder="Nome completo" required>
+                <input class="input-form" type="email" placeholder="Email" required>
+                <input class="input-form" type="password" placeholder="Senha" required>
+                <input class="input-form" type="password" placeholder="Confirmar senha" required>
+                <button type="submit" class="botao-form">Cadastrar-se</button>
             </form>
 
-            <p class="cadastro-link">
-                Já é assinante? <a href="login.html">Faça login</a>
+            <p class="link-alternativo">
+                Já é assinante? <a href="index.html">Faça login</a>
             </p>
-            
         </div> 
     </div>
+    <script src="js/cadastro.js"></script>
 </body>
 </html>

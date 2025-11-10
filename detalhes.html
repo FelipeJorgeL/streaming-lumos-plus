@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos+</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header class="barra-topo">
+        <div class="logo">
+            <a href="home.html"><img src="assets/images/Lumos+ logo.png" alt="logo"></a>
+        </div>
+        <nav class="menu-links">
+            <a href="home.html#secao-em-alta" class="link-nav">Em Alta</a>
+            <a href="filmes.html" class="link-nav">Filmes</a>
+            <a href="series.html" class="link-nav">Séries</a>
+        </nav>
+        <div class="menu-direita">
+            <form class="caixa-busca" id="caixa-busca">
+                <input type="text" class="input-busca" id="input-busca" placeholder="Buscar...">
+                <button type="submit" class="botao-busca" id="botao-busca">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <a href="gerenciar-perfil.html" class="icone-nav icone-perfil" id="icone-perfil-header">
+                <i class="fas fa-user-circle"></i> 
+            </a>
+        </div>
+    </header>
+
+    <main class="container-detalhes">
+        
+        <section class="hero-detalhes">
+            <img id="img-fundo-detalhes" class="img-fundo-detalhes" src="" alt="Fundo do Filme">
+            <div class="overlay-hero"></div>
+            <div class="conteudo-hero-detalhes">
+                <img id="logo-filme" src="" alt="Logo do Filme" style="display: none;"> 
+                <h1 id="titulo-detalhes" class="titulo-destaque"></h1> 
+                <div id="infos-meta" class="infos-meta"></div>
+                <p id="descricao-hero-detalhes" class="descricao-destaque"></p>
+                <div class="botoes-destaque">
+                    <button class="botao-assistir" id="botao-assistir"><i class="fas fa-play"></i> Assistir</button>
+                    <button class="botao-icone" id="botao-minha-lista">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="abas-detalhes">
+            <nav class="nav-abas">
+                <a href="#sugestoes" class="link-aba ativo" data-aba="sugestoes">Sugestões</a>
+                <a href="#detalhes" class="link-aba" data-aba="detalhes">Detalhes</a>
+            </nav>
+        
+            <div class="conteudo-abas">
+                <div id="painel-sugestoes" class="painel-aba ativo">
+                    <div class="trilho-wrapper">
+                        <button class="seta-fileira esquerda"><i class="fas fa-chevron-left"></i></button>
+                        <div class="trilho-container">
+                            <div class="trilho" id="trilho-sugestoes"></div>
+                        </div>
+                        <button class="seta-fileira direita"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+        
+                <div id="painel-detalhes" class="painel-aba">
+                    <div class="grid-detalhes">
+                        <div class="coluna-esquerda-detalhes">
+                            <h3 id="titulo-sinopse"></h3> 
+                            <p id="resumo-detalhes"></p>
+                            <p id="aviso-detalhes">Contém sequências de luzes que podem afetar pessoas fotossensíveis.</p>
+                        </div>
+                        <div class="coluna-direita-detalhes">
+                            <div class="bloco-info" id="info-duracao"></div>
+                            <div class="bloco-info" id="info-lancamento"></div>
+                            <div class="bloco-info" id="info-genero"></div>
+                            <div class="bloco-info" id="info-classificacao"></div>
+                            <div class="bloco-info" id="info-audio"></div> 
+                            <div class="bloco-info" id="info-formatos"></div> 
+                            <div class="bloco-info" id="info-direcao"></div>
+                            <div class="bloco-info" id="info-elenco"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <small>&copy; 2025 Lumos+. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>  <script src="js/detalhes.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

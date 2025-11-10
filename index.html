@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumos+</title>
+    <title>Lumos+ | Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login-cadastro.css">
 </head>
 <body>
-    
+    <div class="container-login-cadastro">
+        <div class="metade-form">
+            <img src="assets/images/Lumos+ logo.png" alt="Lumos+" class="logo-login">
+            <p class="subtitulo-login">Informe seu email e senha para continuar.</p>
+            
+            <form id="form-login" class="form-login-cadastro">
+                <input class="input-form" type="email" placeholder="Email" required>
+                <input class="input-form" type="password" placeholder="Senha" required>
+                <button type="submit" class="botao-form">Entrar</button>
+            </form>
+            
+            <p class="link-alternativo">
+                Não é assinante ainda? <a href="cadastro.html">Cadastre-se</a>
+            </p>
+        </div>
+        
+        <div class="metade-imagem">
+            <img src="assets/images/grid filmes.png" alt="Filmes" class="img-fundo-login">
+        </div>
+    </div>
+    <script src="js/entrar.js"></script>
 </body>
 </html>
