@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
             nome: 'Felipe',
             email: 'felipe@lumos.com',
             img: 'assets/images/walter.png',
-            sobreMimUrl: 'https://github.com/FelipeJorgeL'
+            sobreMimUrl: 'https://felipejorgel.github.io/portfolio/'
         },
         'guilherme': {
             nome: 'Guilherme',
             email: 'guilherme@lumos.com',
             img: 'assets/images/jesse.png',
-            sobreMimUrl: 'https://github.com/GuilhermeAgra'
+            sobreMimUrl: 'https://guilhermeagra.github.io/WhoAmI/'
         }
     };
 

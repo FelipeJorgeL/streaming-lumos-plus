@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (botaoAssistir) {
             botaoAssistir.addEventListener('click', () => {
-                alert('Player indisponível.');
+                alert('Player indisponível no momento.');
             });
         }
     }
